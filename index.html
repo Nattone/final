@@ -237,7 +237,25 @@
             <button class="btn">Load More</button>
 
         </section>
-        <section class="blog"></section>
+        <section class="video">
+            <div class="poster">
+                <div class="wrapper">
+                    <svg id="play_video" data-name="play video" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+                        <path id="icon-play" class="cls-2"
+                            d="M955.934,3685.82a2.047,2.047,0,0,1-2.06-2.06v-29.52a2.062,2.062,0,0,1,3.379-1.59l17.714,14.77a2.053,2.053,0,0,1,0,3.16l-17.714,14.76A2.031,2.031,0,0,1,955.934,3685.82Zm2.06-27.19v20.73L970.431,3669Zm2.943,45.37a34.793,34.793,0,0,1-17.106-4.47,2.06,2.06,0,1,1,2.021-3.59,30.921,30.921,0,1,0-6.7-5.09,2.059,2.059,0,1,1-2.913,2.91A35.057,35.057,0,1,1,960.937,3704Z"
+                            transform="translate(-911 -3619)" />
+                    </svg>
+                    <h2 class="title">Waxom Video Presentation</h2>
+                    <p class="text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui
+                        sequitur mutationem consuetudium.</p>
+                    <p class="time">03:26</p>
+                </div>
+            </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LnoumTpLMfk" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
         <section class="pricing"></section>
         <section class="counter"></section>
         <section class="posts"></section>
@@ -248,5 +266,11 @@
     </footer>
 
 </body>
+
+<script>
+    document.querySelector(".poster").onclick = function () {
+        this.style.display = "none";
+    }
+</script>
 
 </html>
